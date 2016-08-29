@@ -32,8 +32,11 @@ class RobotsController < ApplicationController
 
   def destroy
     @robot = Robot.find(params[:id])
-    @robot.destroy
-    render json: { message: "success" }, status: :ok
+    if @robot.destroy
+      render json: { message: "success" }, status: :ok
+    else
+      render json: @robot.errors, status: :unprocessable_entity
+    end
   end
 
   private
