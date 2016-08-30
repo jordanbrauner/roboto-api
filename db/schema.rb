@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160212173013) do
+ActiveRecord::Schema.define(version: 20160830152821) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "contributions", force: :cascade do |t|
-    t.string   "name"
-    t.string   "amount"
+    t.string   "name",       null: false
+    t.float    "amount",     null: false
     t.integer  "robot_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -27,25 +27,25 @@ ActiveRecord::Schema.define(version: 20160212173013) do
   add_index "contributions", ["robot_id"], name: "index_contributions_on_robot_id", using: :btree
 
   create_table "robots", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name",          null: false
     t.text     "tagline"
-    t.text     "bio"
-    t.string   "corporation"
-    t.string   "country"
+    t.text     "bio",           null: false
+    t.string   "corporation",   null: false
+    t.string   "country",       null: false
     t.string   "rClass"
-    t.string   "year"
+    t.integer  "year"
     t.integer  "sPower"
     t.integer  "sEnergy"
     t.integer  "sAgility"
     t.integer  "sArmor"
     t.string   "pLName"
     t.string   "pLNationality"
-    t.string   "pLBattles"
+    t.integer  "pLBattles"
     t.string   "pRName"
     t.string   "pRNationality"
-    t.string   "pRBattles"
-    t.string   "cGoal"
-    t.string   "photoUrl"
+    t.integer  "pRBattles"
+    t.float    "cGoal",         null: false
+    t.string   "photoUrl",      null: false
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end

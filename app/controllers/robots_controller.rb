@@ -41,7 +41,7 @@ class RobotsController < ApplicationController
 
   private
     def robot_params
-      params.require(:robot).permit(:name, :tagline, :photoUrl, :bio, :country, :rClass, :corporation, :year, :sPower, :sEnergy, :sAgility, :sArmor, :pLName, :pLNationality, :pLBattles, :pRName, :pRNationality, :pRBattles)
+      params.require(:robot).permit(:name, :tagline, :photoUrl, :bio, :cGoal, :country, :rClass, :corporation, :year, :sPower, :sEnergy, :sAgility, :sArmor, :pLName, :pLNationality, :pLBattles, :pRName, :pRNationality, :pRBattles)
     end
 
 end

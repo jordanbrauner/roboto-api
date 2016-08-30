@@ -28,7 +28,7 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10,000,000"
+    cGoal: "10000000.00"
 )
 
 Robot.create(
@@ -50,7 +50,7 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10,000,000"
+    cGoal: "10000000.00"
 )
 
 Robot.create(
@@ -72,7 +72,7 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10,000,000"
+    cGoal: "10000000.00"
 )
 
 Robot.create(
@@ -94,7 +94,7 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10,000,000"
+    cGoal: "10000000.00"
 )
 
 Robot.create(
@@ -116,7 +116,7 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10,000,000"
+    cGoal: "10000000.00"
 )
 
 Robot.create(
@@ -138,7 +138,7 @@ Robot.create(
     pRName: "N/A",
     pRNationality: "N/A",
     pRBattles: "N/A",
-    cGoal: "Funded"
+    cGoal: "250000.00"
 )
 
 Robot.create(
@@ -160,47 +160,47 @@ Robot.create(
     pRName: "N/A",
     pRNationality: "N/A",
     pRBattles: "N/A",
-    cGoal: "Funded"
+    cGoal: "500500000.00"
 )
 
 Contribution.create(
     name: "THE SOCIETY",
-    amount: "2,400,000",
+    amount: "2400000.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "Earth Foundation",
-    amount: "2,100,000",
+    amount: "2100000.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "Donald Trump",
-    amount: "1,900,000",
+    amount: "1900000.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "Bernie Sanders",
-    amount: "500,500",
+    amount: "500525.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "The Kurosawa Foundation",
-    amount: "490,000",
+    amount: "490000.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "M.E.T.A.L.",
-    amount: "320,000",
+    amount: "320000.00",
     robot_id: 1
 )
 
 Contribution.create(
     name: "Mr. Baggins",
-    amount: "200",
+    amount: "200.00",
     robot_id: 1
 )
