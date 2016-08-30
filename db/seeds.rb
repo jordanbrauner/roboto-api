@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Robot.delete_all
-Contribution.delete_all
+Robot.destroy_all
+Contribution.destroy_all
 
 Robot.create(
     name: "RX-78-2",
@@ -163,44 +163,45 @@ Robot.create(
     cGoal: "500500000.00"
 )
 
-Contribution.create(
-    name: "THE SOCIETY",
-    amount: "2400000.00",
-    robot_id: 1
+r1 = Robot.first
+
+r1.contributions.create(
+  name: "Earth Foundation",
+  amount: "2100000.00",
 )
 
-Contribution.create(
+r1.contributions.create(
     name: "Earth Foundation",
     amount: "2100000.00",
-    robot_id: 1
 )
 
-Contribution.create(
+r1.contributions.create(
+    name: "Mr. Baggins",
+    amount: "199.99",
+)
+
+r1.contributions.create(
     name: "Donald Trump",
     amount: "1900000.00",
-    robot_id: 1
 )
 
-Contribution.create(
+r1.contributions.create(
+  name: "M.E.T.A.L.",
+  amount: "320000.00",
+  robot_id: 1
+)
+
+r1.contributions.create(
+    name: "THE SOCIETY",
+    amount: "2400000.00",
+)
+
+r1.contributions.create(
     name: "Bernie Sanders",
-    amount: "500525.00",
-    robot_id: 1
+    amount: "500524.95",
 )
 
-Contribution.create(
+r1.contributions.create(
     name: "The Kurosawa Foundation",
     amount: "490000.00",
-    robot_id: 1
-)
-
-Contribution.create(
-    name: "M.E.T.A.L.",
-    amount: "320000.00",
-    robot_id: 1
-)
-
-Contribution.create(
-    name: "Mr. Baggins",
-    amount: "200.00",
-    robot_id: 1
 )

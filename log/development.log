@@ -26369,3 +26369,1666 @@ Started GET "/robots" for ::1 at 2016-08-30 12:32:40 -0400
 Processing by RobotsController#index as HTML
   [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
 Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/9" for ::1 at 2016-08-30 12:37:59 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mRobot Load (1.4ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 9]]
+Completed 200 OK in 56ms (Views: 0.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:37:59 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/9/contributions" for ::1 at 2016-08-30 12:37:59 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"9"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mContribution Load (1.1ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 9]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:38:05 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.9ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:38:06 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.6ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:38:06 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.6ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:38:06 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.6ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.5ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.8ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (2.3ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:41:27 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:41:27 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.5ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:35 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:35 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:41:35 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.4ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:41:35 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:41 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:41 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:41:41 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:41:41 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.2ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:47 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:41:47 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:41:47 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:41:47 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:13 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:13 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:42:13 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:42:13 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.2ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:19 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:19 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:42:19 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:42:19 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:42:27 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:42:27 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:32 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:42:32 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:42:32 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:42:32 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:46:50 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:46:50 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.6ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:46:50 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:46:50 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:46:52 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 12:46:52 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 12:46:52 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 12:46:52 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.2ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRobots (20160208201048)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "robots" ("id" serial primary key, "name" character varying, "tagline" text, "bio" text, "corporation" character varying, "country" character varying, "rClass" character varying, "year" character varying, "sPower" integer, "sEnergy" integer, "sAgility" integer, "sArmor" integer, "pLName" character varying, "pLNationality" character varying, "pLBattles" character varying, "pRName" character varying, "pRNationality" character varying, "pRBattles" character varying, "cGoal" character varying) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208201048"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateContributions (20160208203509)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "contributions" ("id" serial primary key, "name" character varying, "amount" character varying, "robot_id" integer) [0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_contributions_on_robot_id" ON "contributions"  ("robot_id")
+  [1m[36m (2.6ms)[0m  [1mALTER TABLE "contributions" ADD CONSTRAINT "fk_rails_d971f8251b"
+FOREIGN KEY ("robot_id")
+  REFERENCES "robots" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208203509"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddPhotourlToRobots (20160208204829)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "photoUrl" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208204829"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToRobots (20160212172941)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "created_at" timestamp NOT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "robots" ADD "updated_at" timestamp NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160212172941"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddColumnToContributions (20160212173013)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" ADD "created_at" timestamp NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contributions" ADD "updated_at" timestamp NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160212173013"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIntegersToFloats (20160830145538)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (5.3ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "year" TYPE integer USING CAST("year" AS integer)[0m
+  [1m[35m (4.0ms)[0m  ALTER TABLE "robots" ALTER COLUMN "pLBattles" TYPE integer USING CAST("pLBattles" AS integer)
+  [1m[36m (4.3ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "pRBattles" TYPE integer USING CAST("pRBattles" AS integer)[0m
+  [1m[35m (4.2ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE float USING CAST("cGoal" AS float)
+  [1m[36m (4.3ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE float USING CAST("amount" AS float)[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830145538"]]
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnsToNullFalse (20160830152821)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "contributions" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" ALTER "amount" SET NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "bio" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "corporation" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "country" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "cGoal" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "photoUrl" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830152821"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to ChangeFloatColumnsToDecimal (20160830165257)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (5.0ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE decimal USING CAST("cGoal" AS decimal)
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE decimal USING CAST("amount" AS decimal)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830165257"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contributions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'robots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (1.1ms)[0m  DELETE FROM "robots"
+  [1m[36mSQL (1.8ms)[0m  [1mDELETE FROM "contributions"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 16:54:12.968073"], ["updated_at", "2016-08-30 16:54:12.968073"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 16:54:12.977883"], ["updated_at", "2016-08-30 16:54:12.977883"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 16:54:12.980893"], ["updated_at", "2016-08-30 16:54:12.980893"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 16:54:12.983583"], ["updated_at", "2016-08-30 16:54:12.983583"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 16:54:12.986370"], ["updated_at", "2016-08-30 16:54:12.986370"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 16:54:12.989292"], ["updated_at", "2016-08-30 16:54:12.989292"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 16:54:12.991948"], ["updated_at", "2016-08-30 16:54:12.991948"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "THE SOCIETY"], ["amount", "2400000.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:12.999580"], ["updated_at", "2016-08-30 16:54:12.999580"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.002278"], ["updated_at", "2016-08-30 16:54:13.002278"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Donald Trump"], ["amount", "1900000.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.004211"], ["updated_at", "2016-08-30 16:54:13.004211"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bernie Sanders"], ["amount", "500525.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.005984"], ["updated_at", "2016-08-30 16:54:13.005984"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "The Kurosawa Foundation"], ["amount", "490000.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.007771"], ["updated_at", "2016-08-30 16:54:13.007771"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "M.E.T.A.L."], ["amount", "320000.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.009499"], ["updated_at", "2016-08-30 16:54:13.009499"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Mr. Baggins"], ["amount", "200.0"], ["robot_id", 1], ["created_at", "2016-08-30 16:54:13.011386"], ["updated_at", "2016-08-30 16:54:13.011386"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to FixDecimalColumns (20160830165613)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (2.3ms)[0m  [1mALTER TABLE "robots" DROP "cGoal"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "contributions" DROP "amount"
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "robots" ADD "cGoal" decimal(16,2)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "contributions" ADD "amount" decimal(16,2)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830165613"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contributions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'robots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (3.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRobots (20160208201048)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "robots" ("id" serial primary key, "name" character varying, "tagline" text, "bio" text, "corporation" character varying, "country" character varying, "rClass" character varying, "year" character varying, "sPower" integer, "sEnergy" integer, "sAgility" integer, "sArmor" integer, "pLName" character varying, "pLNationality" character varying, "pLBattles" character varying, "pRName" character varying, "pRNationality" character varying, "pRBattles" character varying, "cGoal" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208201048"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateContributions (20160208203509)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "contributions" ("id" serial primary key, "name" character varying, "amount" character varying, "robot_id" integer) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX  "index_contributions_on_robot_id" ON "contributions"  ("robot_id")
+  [1m[36m (2.2ms)[0m  [1mALTER TABLE "contributions" ADD CONSTRAINT "fk_rails_d971f8251b"
+FOREIGN KEY ("robot_id")
+  REFERENCES "robots" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208203509"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPhotourlToRobots (20160208204829)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "photoUrl" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208204829"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToRobots (20160212172941)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "created_at" timestamp NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ADD "updated_at" timestamp NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160212172941"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddColumnToContributions (20160212173013)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.0ms)[0m  ALTER TABLE "contributions" ADD "created_at" timestamp NOT NULL
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "contributions" ADD "updated_at" timestamp NOT NULL[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160212173013"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIntegersToFloats (20160830145538)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.9ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "year" TYPE integer USING CAST("year" AS integer)[0m
+  [1m[35m (4.3ms)[0m  ALTER TABLE "robots" ALTER COLUMN "pLBattles" TYPE integer USING CAST("pLBattles" AS integer)
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "pRBattles" TYPE integer USING CAST("pRBattles" AS integer)[0m
+  [1m[35m (4.6ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE float USING CAST("cGoal" AS float)
+  [1m[36m (4.7ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE float USING CAST("amount" AS float)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830145538"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnsToNullFalse (20160830152821)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contributions" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "contributions" ALTER "amount" SET NOT NULL
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "robots" ALTER "bio" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "corporation" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "country" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "cGoal" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "photoUrl" SET NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830152821"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to ChangeFloatColumnsToDecimal (20160830165257)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.9ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE decimal USING CAST("cGoal" AS decimal)
+  [1m[36m (6.5ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE decimal USING CAST("amount" AS decimal)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830165257"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to FixDecimalColumns (20160830165613)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" DROP "cGoal"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" DROP "amount"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ADD "cGoal" decimal(16,2)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "contributions" ADD "amount" decimal(16,2)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830165613"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (4.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contributions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'robots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "robots"[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "contributions"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:00:17.798200"], ["updated_at", "2016-08-30 17:00:17.798200"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:00:17.803032"], ["updated_at", "2016-08-30 17:00:17.803032"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:00:17.806592"], ["updated_at", "2016-08-30 17:00:17.806592"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:00:17.810221"], ["updated_at", "2016-08-30 17:00:17.810221"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:00:17.813724"], ["updated_at", "2016-08-30 17:00:17.813724"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:00:17.816561"], ["updated_at", "2016-08-30 17:00:17.816561"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:00:17.819591"], ["updated_at", "2016-08-30 17:00:17.819591"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "THE SOCIETY"], ["amount", "2400000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.826833"], ["updated_at", "2016-08-30 17:00:17.826833"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.829333"], ["updated_at", "2016-08-30 17:00:17.829333"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Donald Trump"], ["amount", "1900000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.831143"], ["updated_at", "2016-08-30 17:00:17.831143"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Bernie Sanders"], ["amount", "500525.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.833010"], ["updated_at", "2016-08-30 17:00:17.833010"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "The Kurosawa Foundation"], ["amount", "490000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.834943"], ["updated_at", "2016-08-30 17:00:17.834943"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "M.E.T.A.L."], ["amount", "320000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.836672"], ["updated_at", "2016-08-30 17:00:17.836672"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mr. Baggins"], ["amount", "200.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:00:17.838438"], ["updated_at", "2016-08-30 17:00:17.838438"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:00:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.9ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:00:24 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (1.1ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 46ms (Views: 0.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:00:24 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:00:24 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.7ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:01:52 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.7ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:01:52 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (2.0ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:01:52 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:01:52 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.6ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.5ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:03:26 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:03:26 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (1.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:03:26 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:03:26 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (2.5ms)[0m  DELETE FROM "robots"
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRobots (20160208201048)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.1ms)[0m  [1mCREATE TABLE "robots" ("id" serial primary key, "name" character varying, "tagline" text, "bio" text, "corporation" character varying, "country" character varying, "rClass" character varying, "year" character varying, "sPower" integer, "sEnergy" integer, "sAgility" integer, "sArmor" integer, "pLName" character varying, "pLNationality" character varying, "pLBattles" character varying, "pRName" character varying, "pRNationality" character varying, "pRBattles" character varying, "cGoal" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208201048"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateContributions (20160208203509)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "contributions" ("id" serial primary key, "name" character varying, "amount" character varying, "robot_id" integer) [0m
+  [1m[35m (0.7ms)[0m  CREATE  INDEX  "index_contributions_on_robot_id" ON "contributions"  ("robot_id")
+  [1m[36m (2.1ms)[0m  [1mALTER TABLE "contributions" ADD CONSTRAINT "fk_rails_d971f8251b"
+FOREIGN KEY ("robot_id")
+  REFERENCES "robots" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208203509"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddPhotourlToRobots (20160208204829)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "photoUrl" character varying[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208204829"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToRobots (20160212172941)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "created_at" timestamp NOT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "robots" ADD "updated_at" timestamp NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160212172941"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddColumnToContributions (20160212173013)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "contributions" ADD "created_at" timestamp NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contributions" ADD "updated_at" timestamp NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160212173013"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIntegersToFloats (20160830145538)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (6.9ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "year" TYPE integer USING CAST("year" AS integer)[0m
+  [1m[35m (4.2ms)[0m  ALTER TABLE "robots" ALTER COLUMN "pLBattles" TYPE integer USING CAST("pLBattles" AS integer)
+  [1m[36m (4.1ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "pRBattles" TYPE integer USING CAST("pRBattles" AS integer)[0m
+  [1m[35m (4.1ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE float USING CAST("cGoal" AS float)
+  [1m[36m (4.4ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE float USING CAST("amount" AS float)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830145538"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnsToNullFalse (20160830152821)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "contributions" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" ALTER "amount" SET NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "bio" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "corporation" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "country" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "cGoal" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "photoUrl" SET NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830152821"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to ChangeFloatColumnsToDecimal (20160830165257)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.5ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE decimal USING CAST("cGoal" AS decimal)
+  [1m[36m (4.3ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE decimal USING CAST("amount" AS decimal)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830165257"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to FixDecimalColumns (20160830165613)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" DROP "cGoal"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" DROP "amount"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ADD "cGoal" decimal(16,2)[0m
+  [1m[35m (1.9ms)[0m  ALTER TABLE "contributions" ADD "amount" decimal(16,2)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830165613"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contributions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'robots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "robots"[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "contributions"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:04:47.722610"], ["updated_at", "2016-08-30 17:04:47.722610"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:04:47.726556"], ["updated_at", "2016-08-30 17:04:47.726556"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:04:47.729752"], ["updated_at", "2016-08-30 17:04:47.729752"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:04:47.732540"], ["updated_at", "2016-08-30 17:04:47.732540"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:04:47.735411"], ["updated_at", "2016-08-30 17:04:47.735411"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:04:47.738068"], ["updated_at", "2016-08-30 17:04:47.738068"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:04:47.740664"], ["updated_at", "2016-08-30 17:04:47.740664"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "THE SOCIETY"], ["amount", "2400000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.747684"], ["updated_at", "2016-08-30 17:04:47.747684"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.750564"], ["updated_at", "2016-08-30 17:04:47.750564"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Donald Trump"], ["amount", "1900000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.752324"], ["updated_at", "2016-08-30 17:04:47.752324"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Bernie Sanders"], ["amount", "500524.95"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.754033"], ["updated_at", "2016-08-30 17:04:47.754033"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "The Kurosawa Foundation"], ["amount", "490000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.755799"], ["updated_at", "2016-08-30 17:04:47.755799"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "M.E.T.A.L."], ["amount", "320000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.757488"], ["updated_at", "2016-08-30 17:04:47.757488"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mr. Baggins"], ["amount", "199.99"], ["robot_id", 1], ["created_at", "2016-08-30 17:04:47.759165"], ["updated_at", "2016-08-30 17:04:47.759165"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:04:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (1.0ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:04:56 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 34ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:04:56 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.9ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:04:56 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:05:54 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.9ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:05:54 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.8ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:05:54 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (2.1ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:05:54 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.6ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.8ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:04 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.6ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:04 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.7ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:06:04 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:06:04 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:19 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:19 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.7ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:06:19 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:06:19 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.6ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:30 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:30 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.6ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:06:30 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:06:30 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.4ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:41 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:41 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.6ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:06:41 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:06:41 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.6ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:57 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:06:57 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.7ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:06:57 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:06:57 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.4ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:06 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:06 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:07:06 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:07:06 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:07:27 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:07:27 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.2ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:58 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:07:58 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (1.1ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:07:58 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:07:58 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:04 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:04 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:08:04 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:08:04 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:07 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:07 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.7ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:08:07 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:08:07 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:15 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.5ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:15 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.5ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:08:15 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:08:15 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (1.1ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:08:27 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.6ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:08:27 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:08:27 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:09:24 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.4ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:09:24 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.6ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:09:24 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRobot Load (0.3ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:09:24 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[36mRobot Load (0.3ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC  [["robot_id", 1]]
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mRobot Load (1.0ms)[0m  SELECT "robots".* FROM "robots"
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.6ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "contributions" WHERE "contributions"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "contributions" WHERE "contributions"."id" = $1  [["id", 2]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contributions" WHERE "contributions"."id" = $1[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "contributions" WHERE "contributions"."id" = $1  [["id", 4]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contributions" WHERE "contributions"."id" = $1[0m  [["id", 5]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "contributions" WHERE "contributions"."id" = $1  [["id", 6]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "contributions" WHERE "contributions"."id" = $1[0m  [["id", 7]]
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 2]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 3]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 4]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 4]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.1ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 5]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 5]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.1ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 6]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 6]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.1ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 7]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 7]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mContribution Load (0.2ms)[0m  SELECT "contributions".* FROM "contributions"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:12:45.853799"], ["updated_at", "2016-08-30 17:12:45.853799"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:12:45.859072"], ["updated_at", "2016-08-30 17:12:45.859072"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:12:45.861915"], ["updated_at", "2016-08-30 17:12:45.861915"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:12:45.864793"], ["updated_at", "2016-08-30 17:12:45.864793"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:12:45.867365"], ["updated_at", "2016-08-30 17:12:45.867365"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:12:45.869893"], ["updated_at", "2016-08-30 17:12:45.869893"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:12:45.872471"], ["updated_at", "2016-08-30 17:12:45.872471"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:12:45.874687"], ["updated_at", "2016-08-30 17:12:45.874687"]]
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRobots (20160208201048)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.4ms)[0m  [1mCREATE TABLE "robots" ("id" serial primary key, "name" character varying, "tagline" text, "bio" text, "corporation" character varying, "country" character varying, "rClass" character varying, "year" character varying, "sPower" integer, "sEnergy" integer, "sAgility" integer, "sArmor" integer, "pLName" character varying, "pLNationality" character varying, "pLBattles" character varying, "pRName" character varying, "pRNationality" character varying, "pRBattles" character varying, "cGoal" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208201048"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateContributions (20160208203509)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "contributions" ("id" serial primary key, "name" character varying, "amount" character varying, "robot_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_contributions_on_robot_id" ON "contributions"  ("robot_id")
+  [1m[36m (2.6ms)[0m  [1mALTER TABLE "contributions" ADD CONSTRAINT "fk_rails_d971f8251b"
+FOREIGN KEY ("robot_id")
+  REFERENCES "robots" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208203509"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddPhotourlToRobots (20160208204829)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.8ms)[0m  [1mALTER TABLE "robots" ADD "photoUrl" character varying[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160208204829"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddColumnToRobots (20160212172941)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" ADD "created_at" timestamp NOT NULL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "robots" ADD "updated_at" timestamp NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160212172941"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddColumnToContributions (20160212173013)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "contributions" ADD "created_at" timestamp NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contributions" ADD "updated_at" timestamp NOT NULL[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160212173013"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeIntegersToFloats (20160830145538)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.3ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "year" TYPE integer USING CAST("year" AS integer)[0m
+  [1m[35m (5.6ms)[0m  ALTER TABLE "robots" ALTER COLUMN "pLBattles" TYPE integer USING CAST("pLBattles" AS integer)
+  [1m[36m (6.6ms)[0m  [1mALTER TABLE "robots" ALTER COLUMN "pRBattles" TYPE integer USING CAST("pRBattles" AS integer)[0m
+  [1m[35m (8.0ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE float USING CAST("cGoal" AS float)
+  [1m[36m (7.8ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE float USING CAST("amount" AS float)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830145538"]]
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+Migrating to ChangeColumnsToNullFalse (20160830152821)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "contributions" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "contributions" ALTER "amount" SET NOT NULL
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ALTER "name" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "bio" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "corporation" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "country" SET NOT NULL
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "robots" ALTER "cGoal" SET NOT NULL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "robots" ALTER "photoUrl" SET NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830152821"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to ChangeFloatColumnsToDecimal (20160830165257)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.5ms)[0m  ALTER TABLE "robots" ALTER COLUMN "cGoal" TYPE decimal USING CAST("cGoal" AS decimal)
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "contributions" ALTER COLUMN "amount" TYPE decimal USING CAST("amount" AS decimal)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160830165257"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to FixDecimalColumns (20160830165613)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "robots" DROP "cGoal"[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "contributions" DROP "amount"
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "robots" ADD "cGoal" decimal(16,2)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "contributions" ADD "amount" decimal(16,2)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160830165613"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'contributions'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'robots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mRobot Load (0.9ms)[0m  SELECT "robots".* FROM "robots"
+  [1m[36mContribution Load (0.6ms)[0m  [1mSELECT "contributions".* FROM "contributions"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:16:29.021984"], ["updated_at", "2016-08-30 17:16:29.021984"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:16:29.037884"], ["updated_at", "2016-08-30 17:16:29.037884"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:16:29.040822"], ["updated_at", "2016-08-30 17:16:29.040822"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:16:29.043785"], ["updated_at", "2016-08-30 17:16:29.043785"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:16:29.046503"], ["updated_at", "2016-08-30 17:16:29.046503"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:16:29.049163"], ["updated_at", "2016-08-30 17:16:29.049163"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:16:29.051804"], ["updated_at", "2016-08-30 17:16:29.051804"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 1], ["created_at", "2016-08-30 17:16:29.076626"], ["updated_at", "2016-08-30 17:16:29.076626"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mRobot Load (1.0ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mContribution Load (0.4ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mRobot Load (0.9ms)[0m  SELECT "robots".* FROM "robots"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.6ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "contributions" WHERE "contributions"."id" = $1[0m  [["id", 1]]
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 1]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 2]]
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 2]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 3]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 4]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 5]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 6]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mContribution Load (0.1ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1[0m  [["robot_id", 7]]
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "robots" WHERE "robots"."id" = $1  [["id", 7]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mContribution Load (0.2ms)[0m  SELECT "contributions".* FROM "contributions"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:18:09.668358"], ["updated_at", "2016-08-30 17:18:09.668358"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:18:09.671898"], ["updated_at", "2016-08-30 17:18:09.671898"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:18:09.674472"], ["updated_at", "2016-08-30 17:18:09.674472"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:18:09.677309"], ["updated_at", "2016-08-30 17:18:09.677309"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:18:09.679784"], ["updated_at", "2016-08-30 17:18:09.679784"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:18:09.682336"], ["updated_at", "2016-08-30 17:18:09.682336"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:18:09.684798"], ["updated_at", "2016-08-30 17:18:09.684798"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mRobot Load (0.4ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mRobot Load (1.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mRobot Load (1.0ms)[0m  SELECT "robots".* FROM "robots"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 8]]
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 8]]
+  [1m[35m (2.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 9]]
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 10]]
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 11]]
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.2ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 12]]
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.2ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 13]]
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mContribution Load (0.1ms)[0m  SELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  [["robot_id", 14]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "robots" WHERE "robots"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "RX-78-2"], ["tagline", "Taking Japan by Storm"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Orbitech"], ["country", "Japan"], ["rClass", "AA"], ["year", 2032], ["photoUrl", "http://jordanbrauner.github.io/roboto/gundam-1.jpg"], ["sPower", 7], ["sEnergy", 6], ["sAgility", 8], ["sArmor", 9], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:19:21.080894"], ["updated_at", "2016-08-30 17:19:21.080894"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "BigDog"], ["tagline", "Rough-Terrain Robot"], ["bio", "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2017], ["photoUrl", "http://jordanbrauner.github.io/roboto/big-dog-2.jpg"], ["sPower", 2], ["sEnergy", 5], ["sAgility", 3], ["sArmor", 7], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:19:21.084685"], ["updated_at", "2016-08-30 17:19:21.084685"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "PETMAN"], ["tagline", "The First Anthropomorphic Robot"], ["bio", "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "D"], ["year", 2019], ["photoUrl", "http://jordanbrauner.github.io/roboto/petman-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:19:21.087588"], ["updated_at", "2016-08-30 17:19:21.087588"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Andrew"], ["tagline", "A Thinking, Feeling Android"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Whedon Industries"], ["country", "USA"], ["rClass", "B"], ["year", 2082], ["photoUrl", "http://jordanbrauner.github.io/roboto/andrew-1.jpg"], ["sPower", 6], ["sEnergy", 9], ["sAgility", 9], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:19:21.090614"], ["updated_at", "2016-08-30 17:19:21.090614"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "Atlas"], ["tagline", "DARPA's Child"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Boston Dynamics"], ["country", "USA"], ["rClass", "C"], ["year", 2067], ["photoUrl", "http://jordanbrauner.github.io/roboto/atlas-1.jpg"], ["sPower", 2], ["sEnergy", 1], ["sAgility", 2], ["sArmor", 4], ["pLName", "Kimiko Satsumi"], ["pLNationality", "Japan"], ["pLBattles", 8], ["pRName", "Jonathon Ritz"], ["pRNationality", "United States"], ["pRBattles", 4], ["cGoal", "10000000.0"], ["created_at", "2016-08-30 17:19:21.093909"], ["updated_at", "2016-08-30 17:19:21.093909"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["name", "Maria"], ["tagline", "The Original Artifical Intellegience"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Metropolis"], ["country", "Germany"], ["rClass", "B"], ["year", 1927], ["photoUrl", "http://jordanbrauner.github.io/roboto/metropolis-1.jpg"], ["sPower", 2], ["sEnergy", 2], ["sAgility", 3], ["sArmor", 2], ["pLName", "Maria Helm"], ["pLNationality", "German"], ["pLBattles", 2], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "250000.0"], ["created_at", "2016-08-30 17:19:21.096743"], ["updated_at", "2016-08-30 17:19:21.096743"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "robots" ("name", "tagline", "bio", "corporation", "country", "rClass", "year", "photoUrl", "sPower", "sEnergy", "sAgility", "sArmor", "pLName", "pLNationality", "pLBattles", "pRName", "pRNationality", "pRBattles", "cGoal", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"[0m  [["name", "ASIMO"], ["tagline", "Advanced Step in Innovative Mobility"], ["bio", "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que."], ["corporation", "Honda"], ["country", "Japan"], ["rClass", "C"], ["year", 2000], ["photoUrl", "http://jordanbrauner.github.io/roboto/asimo-1.jpg"], ["sPower", 2], ["sEnergy", 3], ["sAgility", 3], ["sArmor", 2], ["pLName", "N/A"], ["pLNationality", "N/A"], ["pLBattles", 0], ["pRName", "N/A"], ["pRNationality", "N/A"], ["pRBattles", 0], ["cGoal", "500500000.0"], ["created_at", "2016-08-30 17:19:21.103634"], ["updated_at", "2016-08-30 17:19:21.103634"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mRobot Load (0.8ms)[0m  [1mSELECT  "robots".* FROM "robots"  ORDER BY "robots"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.114664"], ["updated_at", "2016-08-30 17:19:21.114664"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Earth Foundation"], ["amount", "2100000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.117874"], ["updated_at", "2016-08-30 17:19:21.117874"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mr. Baggins"], ["amount", "199.99"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.120307"], ["updated_at", "2016-08-30 17:19:21.120307"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "Donald Trump"], ["amount", "1900000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.122795"], ["updated_at", "2016-08-30 17:19:21.122795"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "M.E.T.A.L."], ["amount", "320000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.124795"], ["updated_at", "2016-08-30 17:19:21.124795"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "THE SOCIETY"], ["amount", "2400000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.126776"], ["updated_at", "2016-08-30 17:19:21.126776"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bernie Sanders"], ["amount", "500524.95"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.129063"], ["updated_at", "2016-08-30 17:19:21.129063"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contributions" ("name", "amount", "robot_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["name", "The Kurosawa Foundation"], ["amount", "490000.0"], ["robot_id", 15], ["created_at", "2016-08-30 17:19:21.131434"], ["updated_at", "2016-08-30 17:19:21.131434"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:19:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (1.0ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/robots/1" for ::1 at 2016-08-30 13:19:35 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 10ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Robot with 'id'=1):
+  app/controllers/robots_controller.rb:9:in `show'
+
+
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.1ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (79.0ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (166.3ms)
+
+
+Started GET "/robots/1/contributions" for ::1 at 2016-08-30 13:19:35 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"1"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Robot with 'id'=1):
+  app/controllers/contributions_controller.rb:4:in `index'
+
+
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.7ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.7ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Jordan/.rvm/gems/ruby-2.3.0@global/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.8ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:19:35 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.4ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:19:37 -0400
+Processing by RobotsController#index as HTML
+  [1m[35mRobot Load (0.9ms)[0m  SELECT "robots".* FROM "robots"
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/robots" for ::1 at 2016-08-30 13:19:40 -0400
+Processing by RobotsController#index as HTML
+  [1m[36mRobot Load (0.8ms)[0m  [1mSELECT "robots".* FROM "robots"[0m
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/robots/15/contributions" for ::1 at 2016-08-30 13:19:40 -0400
+Processing by ContributionsController#index as HTML
+  Parameters: {"robot_id"=>"15"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 15]]
+  [1m[36mContribution Load (1.0ms)[0m  [1mSELECT "contributions".* FROM "contributions" WHERE "contributions"."robot_id" = $1  ORDER BY "contributions"."created_at" ASC[0m  [["robot_id", 15]]
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/robots/15" for ::1 at 2016-08-30 13:19:40 -0400
+Processing by RobotsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mRobot Load (0.5ms)[0m  SELECT  "robots".* FROM "robots" WHERE "robots"."id" = $1 LIMIT 1  [["id", 15]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
