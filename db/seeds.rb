@@ -9,7 +9,7 @@
 Robot.destroy_all
 Contribution.destroy_all
 
-Robot.create(
+r1 = Robot.create(
     name: "RX-78-2",
     tagline: "Taking Japan by Storm",
     bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
@@ -28,10 +28,10 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10000000.00"
+    cGoal: "2000000"
 )
 
-Robot.create(
+r2 = Robot.create(
     name: "BigDog",
     tagline: "Rough-Terrain Robot",
     bio: "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains.",
@@ -50,10 +50,10 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10000000.00"
+    cGoal: "240000"
 )
 
-Robot.create(
+r3 = Robot.create(
     name: "PETMAN",
     tagline: "The First Anthropomorphic Robot",
     bio: "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions.",
@@ -72,10 +72,10 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10000000.00"
+    cGoal: "6500000"
 )
 
-Robot.create(
+r4 = Robot.create(
     name: "Andrew",
     tagline: "A Thinking, Feeling Android",
     bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
@@ -94,10 +94,10 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10000000.00"
+    cGoal: "725,500"
 )
 
-Robot.create(
+r5 = Robot.create(
     name: "Atlas",
     tagline: "DARPA's Child",
     bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
@@ -116,10 +116,10 @@ Robot.create(
     pRName: "Jonathon Ritz",
     pRNationality: "United States",
     pRBattles: "4",
-    cGoal: "10000000.00"
+    cGoal: "120000"
 )
 
-Robot.create(
+r6 = Robot.create(
     name: "Maria",
     tagline: "The Original Artifical Intellegience",
     bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
@@ -138,10 +138,10 @@ Robot.create(
     pRName: "N/A",
     pRNationality: "N/A",
     pRBattles: "N/A",
-    cGoal: "250000.00"
+    cGoal: "1250000"
 )
 
-Robot.create(
+r7 = Robot.create(
     name: "ASIMO",
     tagline: "Advanced Step in Innovative Mobility",
     bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
@@ -160,48 +160,49 @@ Robot.create(
     pRName: "N/A",
     pRNationality: "N/A",
     pRBattles: "N/A",
-    cGoal: "500500000.00"
+    cGoal: "2520000"
 )
 
-r1 = Robot.first
+robots = [r1, r2, r3, r4, r5, r6, r7]
 
-r1.contributions.create(
-  name: "Earth Foundation",
-  amount: "2100000.00",
-)
-
-r1.contributions.create(
+robots.each do |robot|
+  robot.contributions.create(
     name: "Earth Foundation",
-    amount: "2100000.00",
-)
+    amount: "40000",
+  )
 
-r1.contributions.create(
-    name: "Mr. Baggins",
-    amount: "199.99",
-)
+  robot.contributions.create(
+      name: "Silk",
+      amount: "120000",
+  )
 
-r1.contributions.create(
-    name: "Donald Trump",
-    amount: "1900000.00",
-)
+  robot.contributions.create(
+      name: "Mr. Baggins",
+      amount: "250",
+  )
 
-r1.contributions.create(
-  name: "M.E.T.A.L.",
-  amount: "320000.00",
-  robot_id: 1
-)
+  robot.contributions.create(
+      name: "Donald Trump",
+      amount: "10",
+  )
 
-r1.contributions.create(
-    name: "THE SOCIETY",
-    amount: "2400000.00",
-)
+  robot.contributions.create(
+    name: "M.E.T.A.L.",
+    amount: "320000",
+  )
 
-r1.contributions.create(
-    name: "Bernie Sanders",
-    amount: "500524.95",
-)
+  robot.contributions.create(
+      name: "THE SOCIETY",
+      amount: "24000",
+  )
 
-r1.contributions.create(
-    name: "The Kurosawa Foundation",
-    amount: "490000.00",
-)
+  robot.contributions.create(
+      name: "Bernie Sanders",
+      amount: "10525",
+  )
+
+  robot.contributions.create(
+      name: "The Kurosawa Foundation",
+      amount: "40000",
+  )
+end
