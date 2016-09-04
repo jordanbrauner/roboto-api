@@ -29,6 +29,10 @@ gem 'pry'
 
 gem 'rack-cors', require: 'rack/cors'
 
+# User authentication
+gem 'devise'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -3,7 +3,7 @@ class ContributionsController < ApplicationController
   def index
     @robot = Robot.find(params[:robot_id])
     @contributions = @robot.contributions.order(:created_at)
-    
+
     render json: @contributions.to_json, status: :ok
   end
 

@@ -10,11 +10,77 @@ Robot.destroy_all
 Contribution.destroy_all
 
 r1 = Robot.create(
+    name: "Andrew",
+    tagline: "A Thinking, Feeling Android",
+    bio: "Andrew is her how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
+    corporation: "Whedon Industries",
+    country: "Japan",
+    rClass: "B",
+    year: "2082",
+    photoUrl: "http://jordanbrauner.github.io/roboto/andrew-1.jpg",
+    sPower: 6,
+    sEnergy: 9,
+    sAgility: 9,
+    sArmor: 4,
+    pLName: "Lulu Miller",
+    pLNationality: "Japan",
+    pLBattles: "8",
+    pRName: "Motoko Kona",
+    pRNationality: "Japan",
+    pRBattles: "4",
+    cGoal: "725500"
+)
+
+r2 = Robot.create(
+    name: "BigDog",
+    tagline: "Rough-Terrain Robot",
+    bio: "BigDog is her how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
+    corporation: "Boston Dynamics",
+    country: "USA",
+    rClass: "D",
+    year: "2017",
+    photoUrl: "http://jordanbrauner.github.io/roboto/big-dog-2.jpg",
+    sPower: 2,
+    sEnergy: 5,
+    sAgility: 3,
+    sArmor: 7,
+    pLName: "John Adams",
+    pLNationality: "Japan",
+    pLBattles: "8",
+    pRName: "Ben Frances",
+    pRNationality: "United States",
+    pRBattles: "4",
+    cGoal: "240000"
+)
+
+r3 = Robot.create(
+    name: "PETMAN",
+    tagline: "The First Anthropomorphic Robot",
+    bio: "PETMAN is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
+    corporation: "Boston Dynamics",
+    country: "USA",
+    rClass: "D",
+    year: "2019",
+    photoUrl: "http://jordanbrauner.github.io/roboto/petman-1.jpg",
+    sPower: 2,
+    sEnergy: 3,
+    sAgility: 3,
+    sArmor: 2,
+    pLName: "Michael Dorne",
+    pLNationality: "USA",
+    pLBattles: "8",
+    pRName: "Lilian Fawn",
+    pRNationality: "USA",
+    pRBattles: "4",
+    cGoal: "6500000"
+)
+
+r4 = Robot.create(
     name: "RX-78-2",
     tagline: "Taking Japan by Storm",
-    bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    bio: "RX-78-2 is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
     corporation: "Orbitech",
-    country: "Japan",
+    country: "South Korea",
     rClass: "AA",
     year: "2032",
     photoUrl: "http://jordanbrauner.github.io/roboto/gundam-1.jpg",
@@ -25,82 +91,16 @@ r1 = Robot.create(
     pLName: "Kimiko Satsumi",
     pLNationality: "Japan",
     pLBattles: "8",
-    pRName: "Jonathon Ritz",
-    pRNationality: "United States",
+    pRName: "Mei Lon",
+    pRNationality: "China",
     pRBattles: "4",
     cGoal: "2000000"
-)
-
-r2 = Robot.create(
-    name: "BigDog",
-    tagline: "Rough-Terrain Robot",
-    bio: "BigDog is a rough-terrain robot that walks, runs, climbs and carries heavy loads. BigDog is powered by an engine that drives a hydraulic actuation system. BigDog has four legs that are articulated like an animal’s, with compliant elements to absorb shock and recycle energy from one step to the next. BigDog is the size of a large dog or small mule; about 3 feet long, 2.5 feet tall and weighs 240 lbs. BigDog's on-board computer controls locomotion, processes sensors and handles communications with the user. BigDog’s control system keeps it balanced, manages locomotion on a wide variety of terrains.",
-    corporation: "Boston Dynamics",
-    country: "USA",
-    rClass: "D",
-    year: "2017",
-    photoUrl: "http://jordanbrauner.github.io/roboto/big-dog-2.jpg",
-    sPower: 2,
-    sEnergy: 5,
-    sAgility: 3,
-    sArmor: 7,
-    pLName: "Kimiko Satsumi",
-    pLNationality: "Japan",
-    pLBattles: "8",
-    pRName: "Jonathon Ritz",
-    pRNationality: "United States",
-    pRBattles: "4",
-    cGoal: "240000"
-)
-
-r3 = Robot.create(
-    name: "PETMAN",
-    tagline: "The First Anthropomorphic Robot",
-    bio: "PETMAN is an anthropomorphic robot designed for testing chemical protection clothing. Natural agile movement is essential for PETMAN to simulate how a soldier stresses protective clothing under realistic conditions. Unlike previous suit testers that had a limited repertoire of motion and had to be supported mechanically, PETMAN balances itself and moves freely; walking, bending and doing a variety of suit-stressing calisthenics during exposure to chemical warfare agents. PETMAN also simulates human physiology within the protective suit by controlling temperature, humidity and sweating, all to provide realistic test conditions.",
-    corporation: "Boston Dynamics",
-    country: "USA",
-    rClass: "D",
-    year: "2019",
-    photoUrl: "http://jordanbrauner.github.io/roboto/petman-1.jpg",
-    sPower: 2,
-    sEnergy: 3,
-    sAgility: 3,
-    sArmor: 2,
-    pLName: "Kimiko Satsumi",
-    pLNationality: "Japan",
-    pLBattles: "8",
-    pRName: "Jonathon Ritz",
-    pRNationality: "United States",
-    pRBattles: "4",
-    cGoal: "6500000"
-)
-
-r4 = Robot.create(
-    name: "Andrew",
-    tagline: "A Thinking, Feeling Android",
-    bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
-    corporation: "Whedon Industries",
-    country: "USA",
-    rClass: "B",
-    year: "2082",
-    photoUrl: "http://jordanbrauner.github.io/roboto/andrew-1.jpg",
-    sPower: 6,
-    sEnergy: 9,
-    sAgility: 9,
-    sArmor: 4,
-    pLName: "Kimiko Satsumi",
-    pLNationality: "Japan",
-    pLBattles: "8",
-    pRName: "Jonathon Ritz",
-    pRNationality: "United States",
-    pRBattles: "4",
-    cGoal: "725,500"
 )
 
 r5 = Robot.create(
     name: "Atlas",
     tagline: "DARPA's Child",
-    bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    bio: "Atlas is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
     corporation: "Boston Dynamics",
     country: "USA",
     rClass: "C",
@@ -110,11 +110,11 @@ r5 = Robot.create(
     sEnergy: 1,
     sAgility: 2,
     sArmor: 4,
-    pLName: "Kimiko Satsumi",
-    pLNationality: "Japan",
+    pLName: "Eric Cartman",
+    pLNationality: "USA",
     pLBattles: "8",
-    pRName: "Jonathon Ritz",
-    pRNationality: "United States",
+    pRName: "Richard Montana",
+    pRNationality: "USA",
     pRBattles: "4",
     cGoal: "120000"
 )
@@ -122,7 +122,7 @@ r5 = Robot.create(
 r6 = Robot.create(
     name: "Maria",
     tagline: "The Original Artifical Intellegience",
-    bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    bio: "Maria is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
     corporation: "Metropolis",
     country: "Germany",
     rClass: "B",
@@ -144,7 +144,7 @@ r6 = Robot.create(
 r7 = Robot.create(
     name: "ASIMO",
     tagline: "Advanced Step in Innovative Mobility",
-    bio: "Itatur, andempo recessum delistis natiate quis et asperciis dolum voluptam verum rem ra nitia quam nonetur moluptas simus et odi cum aciur, eic to officie ntisque reic to eum dolorum quisque nonsed et autem. Et rerum incim estorestius eatem dolorem lautataquid quid quia et rem hicte vel id quodignam eos eicaborendam ius eos voluptati alis quo modis ide ommo ipsaped itatur solum, occum fugitis sam fugiant ad ut que voluptam quatem nobis am, quae nossit im ipsapitis aliatur? At volorerum elest, sit repe voloris di odistrum inctasped que imolore, sunt que.",
+    bio: "ASIMO is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
     corporation: "Honda",
     country: "Japan",
     rClass: "C",
