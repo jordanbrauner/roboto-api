@@ -1,6 +1,6 @@
 class Contribution < ActiveRecord::Base
 
-  belongs_to :robot
+  belongs_to :campaign
   belongs_to :user
 
 end

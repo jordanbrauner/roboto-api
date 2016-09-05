@@ -1,15 +1,15 @@
 class ContributionsController < ApplicationController
 
   def index
-    @robot = Robot.find(params[:robot_id])
-    @contributions = @robot.contributions.order(:created_at)
+    @campaign = Campaign.find(params[:campaign_id])
+    @contributions = @campaign.contributions.order(:created_at)
 
     render json: @contributions.to_json, status: :ok
   end
 
   def create
-    @robot = Robot.find(params[:robot_id])
-    @contribution = @robot.contributions.build(contribution_params)
+    @campaign = Campaign.find(params[:campaign_id])
+    @contribution = @campaign.contributions.build(contribution_params)
 
     if @contribution.save
       render json: @contribution.to_json, status: :created

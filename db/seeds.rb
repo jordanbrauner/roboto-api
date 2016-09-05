@@ -6,10 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Robot.destroy_all
+Campaign.destroy_all
 Contribution.destroy_all
 
-r1 = Robot.create(
+c1 = Campaign.create(
     name: "Andrew",
     tagline: "A Thinking, Feeling Android",
     bio: "Andrew is her how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -31,7 +31,7 @@ r1 = Robot.create(
     cGoal: "725500"
 )
 
-r2 = Robot.create(
+c2 = Campaign.create(
     name: "BigDog",
     tagline: "Rough-Terrain Robot",
     bio: "BigDog is her how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -53,7 +53,7 @@ r2 = Robot.create(
     cGoal: "240000"
 )
 
-r3 = Robot.create(
+c3 = Campaign.create(
     name: "PETMAN",
     tagline: "The First Anthropomorphic Robot",
     bio: "PETMAN is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -75,7 +75,7 @@ r3 = Robot.create(
     cGoal: "6500000"
 )
 
-r4 = Robot.create(
+c4 = Campaign.create(
     name: "RX-78-2",
     tagline: "Taking Japan by Storm",
     bio: "RX-78-2 is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -97,7 +97,7 @@ r4 = Robot.create(
     cGoal: "2000000"
 )
 
-r5 = Robot.create(
+c5 = Campaign.create(
     name: "Atlas",
     tagline: "DARPA's Child",
     bio: "Atlas is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -119,7 +119,7 @@ r5 = Robot.create(
     cGoal: "120000"
 )
 
-r6 = Robot.create(
+c6 = Campaign.create(
     name: "Maria",
     tagline: "The Original Artifical Intellegience",
     bio: "Maria is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -141,7 +141,7 @@ r6 = Robot.create(
     cGoal: "1250000"
 )
 
-r7 = Robot.create(
+c7 = Campaign.create(
     name: "ASIMO",
     tagline: "Advanced Step in Innovative Mobility",
     bio: "ASIMO is how her day was. Tell her you just want to talk. It has nothing to do with mating. Can I use the gun? And I’d do it again! And perhaps a third time! But that would be it. Well, then good news! It’s a suppository. No! I want to live! There are still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again still too many things I don’t own! With a warning label this big, you know they gotta be fun! And I’d do it again!",
@@ -163,45 +163,45 @@ r7 = Robot.create(
     cGoal: "2520000"
 )
 
-robots = [r1, r2, r3, r4, r5, r6, r7]
+campaigns = [c1, c2, c3, c4, c5, c6, c7]
 
-robots.each do |robot|
-  robot.contributions.create(
+campaigns.each do |campaign|
+  campaign.contributions.create(
     name: "Earth Foundation",
     amount: "40000",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "Silk",
       amount: "120000",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "Mr. Baggins",
       amount: "250",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "Donald Trump",
       amount: "10",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
     name: "M.E.T.A.L.",
     amount: "320000",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "THE SOCIETY",
       amount: "24000",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "Bernie Sanders",
       amount: "10525",
   )
 
-  robot.contributions.create(
+  campaign.contributions.create(
       name: "The Kurosawa Foundation",
       amount: "40000",
   )

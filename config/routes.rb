@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
+  # Devise
   devise_for :users
-  
-  resources :robots do
+
+  # Routes
+  resources :users do
+    resources :contributions, only: [:index, :show, :new, :create]
+  end
+
+  resources :campaigns do
     resources :contributions
   end
 
